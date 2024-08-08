@@ -1,11 +1,24 @@
-
-import React from "react";
+import React from 'react';
 
 const World = () => {
+    const display = () => {
+        let myobject = {name:'Madras'};
+        let newObject = myobject;
+        newObject.name = 'Chennai';
+
+        let myarray = ['a', 'e', 'i', 'o'];
+        let vowelArray = myarray;
+        myarray.push('u');
+
+        alert("Check the console output!");
+
+        console.log(vowelArray);
+    };
+    
     return (
-        <div>
-            <p>This is World Functional Component</p>
-        </div>
+        <>
+            <button onClick={display}>Click me!</button>
+        </>
     );
 };
 
